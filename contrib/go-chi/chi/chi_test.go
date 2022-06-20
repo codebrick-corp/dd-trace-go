@@ -14,12 +14,12 @@ import (
 	"strings"
 	"testing"
 
-	pappsec "gopkg.in/DataDog/dd-trace-go.v1/appsec"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/ext"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/mocktracer"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/appsec"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/globalconfig"
+	pappsec "github.com/codebrick-corp/dd-trace-go/appsec"
+	"github.com/codebrick-corp/dd-trace-go/ddtrace/ext"
+	"github.com/codebrick-corp/dd-trace-go/ddtrace/mocktracer"
+	"github.com/codebrick-corp/dd-trace-go/ddtrace/tracer"
+	"github.com/codebrick-corp/dd-trace-go/internal/appsec"
+	"github.com/codebrick-corp/dd-trace-go/internal/globalconfig"
 
 	"github.com/go-chi/chi"
 	"github.com/stretchr/testify/assert"

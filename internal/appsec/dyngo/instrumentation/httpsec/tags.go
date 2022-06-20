@@ -10,8 +10,8 @@ import (
 	"sort"
 	"strings"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/appsec/dyngo/instrumentation"
+	"github.com/codebrick-corp/dd-trace-go/ddtrace"
+	"github.com/codebrick-corp/dd-trace-go/internal/appsec/dyngo/instrumentation"
 )
 
 // SetAppSecTags sets the AppSec-specific span tags that are expected to be in

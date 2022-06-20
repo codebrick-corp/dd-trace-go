@@ -6,10 +6,10 @@
 package grpc
 
 import (
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/appsec"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/log"
+	"github.com/codebrick-corp/dd-trace-go/ddtrace"
+	"github.com/codebrick-corp/dd-trace-go/ddtrace/tracer"
+	"github.com/codebrick-corp/dd-trace-go/internal/appsec"
+	"github.com/codebrick-corp/dd-trace-go/internal/log"
 
 	"github.com/golang/protobuf/jsonpb"
 	"github.com/golang/protobuf/proto"

@@ -19,12 +19,12 @@ import (
 	"testing"
 	"time"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/ext"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/internal"
-	maininternal "gopkg.in/DataDog/dd-trace-go.v1/internal"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/globalconfig"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/log"
+	"github.com/codebrick-corp/dd-trace-go/ddtrace"
+	"github.com/codebrick-corp/dd-trace-go/ddtrace/ext"
+	"github.com/codebrick-corp/dd-trace-go/ddtrace/internal"
+	maininternal "github.com/codebrick-corp/dd-trace-go/internal"
+	"github.com/codebrick-corp/dd-trace-go/internal/globalconfig"
+	"github.com/codebrick-corp/dd-trace-go/internal/log"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/tinylib/msgp/msgp"

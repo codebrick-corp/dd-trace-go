@@ -4,16 +4,16 @@
 // Copyright 2016 Datadog, Inc.
 
 // Package aws provides functions to trace aws/aws-sdk-go (https://github.com/aws/aws-sdk-go).
-package aws // import "gopkg.in/DataDog/dd-trace-go.v1/contrib/aws/aws-sdk-go/aws"
+package aws // import "github.com/codebrick-corp/dd-trace-go/contrib/aws/aws-sdk-go/aws"
 
 import (
 	"math"
 	"strconv"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/ext"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/log"
+	"github.com/codebrick-corp/dd-trace-go/ddtrace"
+	"github.com/codebrick-corp/dd-trace-go/ddtrace/ext"
+	"github.com/codebrick-corp/dd-trace-go/ddtrace/tracer"
+	"github.com/codebrick-corp/dd-trace-go/internal/log"
 
 	"github.com/aws/aws-sdk-go/aws/request"
 	"github.com/aws/aws-sdk-go/aws/session"
@@ -42,11 +42,11 @@ func WrapSession(s *session.Session, opts ...Option) *session.Session {
 	h := &handlers{cfg: cfg}
 	s = s.Copy()
 	s.Handlers.Send.PushFrontNamed(request.NamedHandler{
-		Name: "gopkg.in/DataDog/dd-trace-go.v1/contrib/aws/aws-sdk-go/aws/handlers.Send",
+		Name: "github.com/codebrick-corp/dd-trace-go/contrib/aws/aws-sdk-go/aws/handlers.Send",
 		Fn:   h.Send,
 	})
 	s.Handlers.Complete.PushBackNamed(request.NamedHandler{
-		Name: "gopkg.in/DataDog/dd-trace-go.v1/contrib/aws/aws-sdk-go/aws/handlers.Complete",
+		Name: "github.com/codebrick-corp/dd-trace-go/contrib/aws/aws-sdk-go/aws/handlers.Complete",
 		Fn:   h.Complete,
 	})
 	return s

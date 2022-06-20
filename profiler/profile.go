@@ -13,8 +13,8 @@ import (
 	"runtime"
 	"time"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/profiler/internal/extensions"
-	"gopkg.in/DataDog/dd-trace-go.v1/profiler/internal/pprofutils"
+	"github.com/codebrick-corp/dd-trace-go/profiler/internal/extensions"
+	"github.com/codebrick-corp/dd-trace-go/profiler/internal/pprofutils"
 
 	"github.com/DataDog/gostackparse"
 	pprofile "github.com/google/pprof/profile"

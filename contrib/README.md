@@ -1,8 +1,8 @@
-[![Godoc](http://img.shields.io/badge/godoc-reference-blue.svg?style=flat)](https://godoc.org/gopkg.in/DataDog/dd-trace-go.v1/contrib)
+[![Godoc](http://img.shields.io/badge/godoc-reference-blue.svg?style=flat)](https://godoc.org/github.com/codebrick-corp/dd-trace-go/contrib)
 
-The purpose of these packages is to provide tracing on top of commonly used packages from the standard library as well as the 
+The purpose of these packages is to provide tracing on top of commonly used packages from the standard library as well as the
 community in a "plug-and-play" manner. This means that by simply importing the appropriate path, functions are exposed having
- the same signature as the original package. These functions return structures which embed the original return value, allowing 
+ the same signature as the original package. These functions return structures which embed the original return value, allowing
 them to be used as they normally would with tracing activated out of the box.
 
 All of these libraries are supported by our [APM product](https://www.datadoghq.com/apm/).
@@ -19,5 +19,5 @@ First, find the library which you'd like to integrate with. The naming conventio
 * All new integrations should be suffixed with `.vN` where `N` is the major version that is being covered. If the integration covers more than one major version, the minimum version supported should be chosen for the suffix. (ex. If the integration covers versions `2.x.x` - `4.x.x`, the suffix will be `.v2`)
 * The package itself should retain its un-versioned name. For example, the integration under `user/repo.v2` stays as `package repo`, and does not become `package repo.v2`
 
-Each integration comes with thorough documentation and usage examples. A good overview can be seen on our 
-[godoc](https://godoc.org/gopkg.in/DataDog/dd-trace-go.v1/contrib) page.
+Each integration comes with thorough documentation and usage examples. A good overview can be seen on our
+[godoc](https://godoc.org/github.com/codebrick-corp/dd-trace-go/contrib) page.

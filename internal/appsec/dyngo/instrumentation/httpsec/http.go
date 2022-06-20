@@ -18,10 +18,10 @@ import (
 	"reflect"
 	"strings"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/appsec/dyngo"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/appsec/dyngo/instrumentation"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/log"
+	"github.com/codebrick-corp/dd-trace-go/ddtrace"
+	"github.com/codebrick-corp/dd-trace-go/internal/appsec/dyngo"
+	"github.com/codebrick-corp/dd-trace-go/internal/appsec/dyngo/instrumentation"
+	"github.com/codebrick-corp/dd-trace-go/internal/log"
 )
 
 // Abstract HTTP handler operation definition.

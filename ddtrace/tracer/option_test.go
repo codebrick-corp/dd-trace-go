@@ -19,8 +19,8 @@ import (
 	"testing"
 	"time"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/globalconfig"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/traceprof"
+	"github.com/codebrick-corp/dd-trace-go/internal/globalconfig"
+	"github.com/codebrick-corp/dd-trace-go/internal/traceprof"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

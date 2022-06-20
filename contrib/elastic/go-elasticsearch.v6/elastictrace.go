@@ -4,7 +4,7 @@
 // Copyright 2016 Datadog, Inc.
 
 // Package elastic provides functions to trace the github.com/elastic/go-elasticsearch packages.
-package elastic // import "gopkg.in/DataDog/dd-trace-go.v1/contrib/elastic/go-elasticsearch
+package elastic // import "github.com/codebrick-corp/dd-trace-go/contrib/elastic/go-elasticsearch
 
 import (
 	"bufio"
@@ -19,9 +19,9 @@ import (
 	"regexp"
 	"strconv"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/ext"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
+	"github.com/codebrick-corp/dd-trace-go/ddtrace"
+	"github.com/codebrick-corp/dd-trace-go/ddtrace/ext"
+	"github.com/codebrick-corp/dd-trace-go/ddtrace/tracer"
 )
 
 // NewRoundTripper returns a new http.Client which traces requests under the given service name.

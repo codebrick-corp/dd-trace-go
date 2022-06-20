@@ -9,7 +9,7 @@ import (
 	"context"
 	"math"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/internal"
+	"github.com/codebrick-corp/dd-trace-go/internal"
 )
 
 type config struct {

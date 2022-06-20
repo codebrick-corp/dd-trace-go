@@ -21,10 +21,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/internal"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/globalconfig"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/osinfo"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/version"
+	"github.com/codebrick-corp/dd-trace-go/internal"
+	"github.com/codebrick-corp/dd-trace-go/internal/globalconfig"
+	"github.com/codebrick-corp/dd-trace-go/internal/osinfo"
+	"github.com/codebrick-corp/dd-trace-go/internal/version"
 )
 
 var (

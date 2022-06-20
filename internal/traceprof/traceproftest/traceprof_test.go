@@ -14,10 +14,10 @@ import (
 	"testing"
 	"time"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/ext"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/traceprof"
-	pb "gopkg.in/DataDog/dd-trace-go.v1/internal/traceprof/testapp"
+	"github.com/codebrick-corp/dd-trace-go/ddtrace/ext"
+	"github.com/codebrick-corp/dd-trace-go/ddtrace/tracer"
+	"github.com/codebrick-corp/dd-trace-go/internal/traceprof"
+	pb "github.com/codebrick-corp/dd-trace-go/internal/traceprof/testapp"
 
 	"github.com/stretchr/testify/require"
 )

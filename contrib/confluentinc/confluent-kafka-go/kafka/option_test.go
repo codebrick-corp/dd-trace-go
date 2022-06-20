@@ -11,7 +11,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/globalconfig"
+	"github.com/codebrick-corp/dd-trace-go/internal/globalconfig"
 )
 
 func TestAnalyticsSettings(t *testing.T) {
